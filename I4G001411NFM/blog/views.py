@@ -11,7 +11,7 @@ from .models import Post
 # Create your views here.
 class PostListView(ListView):
     model = Post
-    
+    template_name = 'blog.html'
 class PostCreateView(CreateView):
     model = Post
     fields = "__all__"
